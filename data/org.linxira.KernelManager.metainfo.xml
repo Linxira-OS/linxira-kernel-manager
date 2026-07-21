@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>org.linxira.KernelManager</id>
+  <name>Linxira Kernel Manager</name>
+  <summary>Inspect supported kernels and review fixed operation plans</summary>
+  <metadata_license>MIT</metadata_license>
+  <project_license>MIT</project_license>
+  <launchable type="desktop-id">org.linxira.KernelManager.desktop</launchable>
+  <description>
+    <p>Reports Linux and Linux LTS package, header, boot image, GRUB, DKMS, loaded module, and reboot state.</p>
+    <p>This read-only release saves reviewable fixed-operation plans but cannot apply system changes.</p>
+  </description>
+  <developer id="org.linxira"><name>Linxira OS</name></developer>
+  <content_rating type="oars-1.1" />
+  <url type="homepage">https://github.com/Linxira-OS/linxira-kernel-manager</url>
+</component>

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Linxira Kernel Manager
+Comment=Inspect supported kernels and review fixed operation plans
+Exec=/usr/bin/linxira-kernel-manager
+Icon=preferences-system
+Terminal=false
+Categories=Settings;
+Keywords=kernel;linux;boot;grub;initramfs;
+StartupNotify=true
