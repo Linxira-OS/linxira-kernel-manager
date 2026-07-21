@@ -27,7 +27,7 @@ class CliAndMetadataTests(unittest.TestCase):
     def test_desktop_and_appstream_metadata_parse(self) -> None:
         root = Path(__file__).parents[1]
         desktop = (root / "data" / "org.linxira.KernelManager.desktop").read_text(encoding="utf-8")
-        self.assertIn("Exec=linxira-kernel-manager", desktop)
+        self.assertIn("Exec=/usr/bin/linxira-kernel-manager", desktop)
         self.assertIn("Terminal=false", desktop)
         component = ET.parse(root / "data" / "org.linxira.KernelManager.metainfo.xml").getroot()
         self.assertEqual(component.findtext("id"), "org.linxira.KernelManager")
