@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 
 from PySide6.QtCore import Qt
-from PySide6.QtGui import QFont
+from PySide6.QtGui import QAction, QFont
 from PySide6.QtWidgets import (
     QCheckBox,
     QComboBox,
@@ -20,6 +20,7 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
+from .about import show_about
 from .policy import OPERATIONS
 from .reporting import build_plan, save_plan_atomic
 
@@ -51,6 +52,9 @@ class MainWindow(QMainWindow):
         self.resize(1080, 740)
         self.setStyleSheet(STYLE)
         self._build()
+        about = QAction("About Linxira Kernel Manager", self)
+        about.triggered.connect(lambda: show_about(self))
+        self.menuBar().addMenu("Help").addAction(about)
 
     @staticmethod
     def _text_view(value: object) -> QPlainTextEdit:
