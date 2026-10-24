@@ -3,7 +3,7 @@ from PySide6.QtWidgets import QDialog, QDialogButtonBox, QLabel, QVBoxLayout, QW
 
 
 APP_NAME = "Linxira Kernel Manager"
-APP_VERSION = "0.1.0"
+APP_VERSION = "0.1.1"
 HOMEPAGE_URL = "https://linxira-os.github.io/"
 REPOSITORY_URL = "https://github.com/Linxira-OS/linxira-kernel-manager"
 ISSUES_URL = f"{REPOSITORY_URL}/issues"
